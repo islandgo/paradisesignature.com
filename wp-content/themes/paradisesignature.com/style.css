@@ -27,7 +27,7 @@ TABLE OF CONTENTS
  *
  *******************************************************/
 
-:root {
+ :root {
     /** Font default */
     --font-family-default: 'Julius Sans One', sans-serif;
     --font-family-title: 'Source Sans Pro', sans-serif;
@@ -111,22 +111,29 @@ body{
     -moz-osx-font-smoothing: grayscale; */
 }
 
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
 .global-site-title h2 {
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #7a7a7a;
     text-transform: uppercase;
-    margin-bottom: 32px;
-    /* border-top: 3px solid;
-    border-color: #d25b4a; */
-    padding-top: 47px;
+    margin-bottom: 19px;
+    letter-spacing: .58em;
+    padding-top: 33px;
 }
 
 .global-site-title h3 {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: 300;
     font-size: 55px;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
 }
 
 .site-title-number {
@@ -149,10 +156,46 @@ body{
 }
 
 .global-site-btn {
-    border-left: 3px solid;
-    border-color: #1595a1;
-    padding: 16px 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    position: relative;
     height: 34px;
+    z-index: 1;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.global-site-btn:hover {
+    color: #FFFFFF;
+}
+
+.global-site-btn::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #1595a1;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.global-site-btn:hover::before {
+    width: 100%;
+    background: #c3210a;
 }
 
 /*******************************************************
@@ -252,3 +295,428 @@ body{
 }
 
 /* MEDIA QUERIES ARE AUTOMATICALLY REMOVED FROM THIS FILE, they must be placed in style-media-queries.css */
+
+
+/* welcome */
+.hp-welcome {
+    padding: 80px 0 90px;
+    position: relative;
+}
+
+.hp-welcome p {
+    padding-bottom: 23px;
+    line-height: 29px;
+}
+
+.hp-welcome::before {
+    background-position: center;
+    background-size: cover;
+    background: url(images/bg-welcome.jpg) no-repeat;
+    content: '';
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    opacity: 0.13;
+    width: 100%;
+}
+
+.welcome-holder {
+    padding-left: 5px;
+    margin-right: -117px;
+}
+
+.welcome-grid .row {
+    margin: 0 -30px;
+}
+
+.welcome-img {
+    padding-right: 17px;
+}
+
+.welcome-img canvas {
+    position: relative;
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* welcome end */
+
+/* properties */
+
+/* properties end */
+
+/* start fc */
+.hp-communities {
+    background: #000000;
+    padding: 95px 0;
+}
+
+.hp-communities h3 {
+    color: #FFFFFF;
+    padding-bottom: 36px;
+}
+
+.hp-communities .global-site-title {
+    padding-left: 98px;
+}
+
+.fc-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    max-width: 1225px;
+    margin: 0 auto;
+}
+
+.fc-title {
+    color: #abb1b1;
+    font-size: 25px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: 43px;
+}
+
+.fc-list a:hover .fc-title {
+    bottom: initial;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-align: center;
+}
+
+a.aios-initial-setup-dead-link {}
+
+.fc-list a {
+    position: relative;
+    display: block;
+}
+
+.fc-img {
+    position: relative;
+}
+
+.fc-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.36);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.fc-list a:hover .fc-img::before {
+    background: rgba(195,33,10,.82);
+}
+
+.fc-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background: url(images/fc-hover.png);
+    opacity: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(.5);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.fc-list a:hover .fc-img::after {
+    opacity: .11;
+    transform: scale(1);
+}
+
+.fc-img canvas {
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* end fc */
+
+/* start hp-git */
+.git-holder {
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    z-index: 1;
+}
+
+.hp-git {
+    padding: 120px 0 0;
+    background: url(images/git-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 0;
+
+}
+
+.hp-git .container {
+    padding: 111px 70px 87px;
+    background: #fff;
+    max-width: 1131px;
+    margin: 0 auto;
+}
+
+.hp-git .primary-text {
+    text-align: center;
+    padding-bottom: 85px;
+}
+
+.hp-git .secondary-text-holder {
+    background: #fff;
+    position: relative;
+    margin-right: auto;
+    max-width: 338px;
+    margin-left: auto;
+    margin-bottom: -36px;
+    z-index: 1;
+    padding: 0 24px;
+}
+
+.hp-git .secondary-text {
+    color: #656565;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: none;
+   
+}
+
+.git-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 1px;
+    padding: 80px 55px 113px;
+    position: relative;
+    z-index: 1;
+}
+
+.hp-git .form-md {
+    display: inline-block;
+    width: 33%;
+}
+
+.hp-git .form-md input,.hp-git .form-md textarea {
+    background: transparent;
+    border: 1px solid #d9d9d9;
+    color: #a0a0a0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-left: 14px;
+    letter-spacing: 0;
+    overflow: hidden;
+    resize: none;
+    text-transform: none;
+    width: 100%;
+    height: 26px;
+}
+
+.hp-git .global-btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px 0 -34px 0;
+}
+
+.hp-git .global-btn .primary-btn {
+    background: #fff;
+    letter-spacing: 0;
+}
+
+.hp-git .global-btn .primary-btn:hover {
+    background: #0abab5;
+    color: #fff;
+    border: 1px solid #0abab5;
+}
+/* end hp-git */
+
+/* start cta */
+.hp-cta {
+    position: relative;
+}
+
+.hp-cta::before {
+    background-position: center;
+    background-size: cover;
+    background: url(images/cta-bg.jpg) no-repeat;
+    content: '';
+    height: 100%;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    opacity: 100;
+    width: 100%;
+    margin-top: -291px;
+}
+
+.cta-list {
+    position: relative;
+}
+
+.cta-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+    max-width: 1225px;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    padding-top: 98px;
+}
+
+.cta-title {
+    position: absolute;
+    bottom: -55px;
+    left: 42px;
+    color: #fff;
+    z-index: 1;
+    padding-left: 15px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.cta-list a:hover .cta-title{
+    padding-top: 31px;
+    background: #b23121;
+    padding-left: 22px;
+}
+
+.cta-title::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #1595a1;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.cta-list a:hover .cta-title::before {
+    background: #b23121;
+}
+
+.cta-title h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 300;
+    font-style: 17px;
+}
+
+.cta-title h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 300;
+    font-size: 33px;
+    padding-bottom: 50px;
+}
+
+.cta-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    position: relative;
+    height: 34px;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-bottom: 19px;
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+}
+
+.cta-list a:hover .cta-btn::before {
+    background: #1595a1;
+}
+
+.cta-img {
+    position: relative;
+}
+
+.cta-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(80,80,80,.55);
+}
+
+.cta-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.cta-img canvas {
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* start cta */
+/*hover {
+    margin-left: 62px;
+    margin-top: -100px;
+    position: absolute;
+    color: #fff;
+    height: 171px;
+    width: 202px;
+    padding: 29px 0 18px 18px;
+} */

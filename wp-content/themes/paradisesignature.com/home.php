@@ -5,21 +5,27 @@
 
 <!-- Welcome -->
 <section class="hp-welcome">
-	<div class="container welcone-grid">
-		<div class="welcome-img">
-			<canvas width="617" height="382" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/properties-img.jpg')"></canvas>
-		</div>
-		<div class="welcome-holder">
-			<div class="global-site-title">
-				<div class="site-title-number">
-					<span>01</span>
-					<span class="title-border"></span>
+	<div class="container welcome-grid">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="welcome-img">
+					<canvas width="545" height="484" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/properties-img.png')"></canvas>
 				</div>
-				<h2>Paradise Properties of</h2>
-				<h3>NSB / SIGNATURE GROUP</h3>
 			</div>
-			<p>Our approach to transacting real estate in simple... We get to know our clients, understand their needs and walk them through every stage of the transaction from beginning to end. This simple approach allows us to utilize our experience of superior client service to deliver and exceed our client's expectations throughout the home buying and or selling process. As an organization, we understand the need for quality representation at very level of a trasaction. As full time Realtors specializing in the New smyrna Beach and surrounding areas of Volisia County, Florida, we couldn't ask for a better job...</p>
-			<a href="#" aria-label="read more" class="global-site-btn">read more +</a>
+			<div class="col-md-7">
+				<div class="welcome-holder">
+					<div class="global-site-title">
+						<div class="site-title-number">
+							<span>01</span>
+							<span class="title-border"></span>
+						</div>
+						<h2>Paradise Properties of</h2>
+						<h3>NSB / SIGNATURE GROUP</h3>
+					</div>
+					<p>Our approach to transacting real estate in simple... We get to know our clients, understand their needs and walk them through every stage of the transaction from beginning to end. This simple approach allows us to utilize our experience of superior client service to deliver and exceed our client's expectations throughout the home buying and or selling process. As an organization, we understand the need for quality representation at very level of a trasaction. As full time Realtors specializing in the New smyrna Beach and surrounding areas of Volisia County, Florida, we couldn't ask for a better job...</p>
+					<a href="#" aria-label="read more" class="global-site-btn">read more +</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -112,38 +118,33 @@
 			<div class="fc-list">
 				<a href="#" aria-label="communities">
 					<div class="fc-img">
-						<canvas width="266" height="352" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-1.jpg')"></canvas>
-					</div>
-					<div class="fc-title"></div>
-				</a>
-			</div>
-			<div class="fc-list">
-				<a href="#" aria-label="communities">
-					<div class="fc-img">
-						<canvas width="617" height="382" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-1.jpg')"></canvas>
+						<canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-1.jpg')"></canvas>
 					</div>
 					<div class="fc-title">
-						<h2>NEW SMYRNA BEACH</h2>
+						NEW SMYRNA BEACH
 					</div>
 				</a>
 			</div>
 			<div class="fc-list">
 				<a href="#" aria-label="communities">
 					<div class="fc-img">
-						<canvas width="567" height="376" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-2.jpg')"></canvas>
+						<canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-2.jpg')"></canvas>
 					</div>
 					<div class="fc-title">
 						EDGEWATER
 					</div>
 				</a>
 			</div>
-			<a href="#" aria-label="communities">
-				<div class="fc-img">
-					<canvas width="966" height="766" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-3.jpg')"></canvas>
-				</div>
-				<div class="fc-title">
-					PORT ORANGE
-				</div>
+			<div class="fc-list">
+				<a href="#" aria-label="communities">
+					<div class="fc-img">
+						<canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fc-3.jpg')"></canvas>
+					</div>
+					<div class="fc-title">
+						PORT ORANGE
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -152,15 +153,16 @@
 <!-- Hp git -->
 <section class="hp-git">
 	<div class="container">
-		<div class="global-site-title">
-			<div class="site-title-number">
-				<span>05</span>
-				<span class="title-border"></span>
+		<div class="git-holder">
+			<div class="global-site-title">
+				<div class="site-title-number">
+					<span>05</span>
+					<span class="title-border"></span>
+				</div>
+				<h2>Get In Touch</h2>
+				<h3>With US</h3>
 			</div>
-			<h2>Get In Touch</h2>
-			<h3>With US</h3>
-		</div>
-		<div class="git-form">
+			<div class="git-form">
 			<div class="form-md">
 				<label for="git-fname">Name</label>
 				<input type="text" id="git-fname" placeholder="Name">
@@ -179,9 +181,10 @@
 			</div>
 			<div class="form-btn">
 				<div class="global-site-btn">
-					<input type="submit" value="sign up +" class="primary-btn">
+					<a href="#" aria-label="sign up" class="global-site-btn">Sign Up +</a>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 </section>
@@ -189,41 +192,44 @@
 
 <!-- Cta -->
 <section class="hp-cta">
-	<div class="cta-list">
-		<a href="#" aria-label="cta">
-			<canvas width="617" height="382" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-1.jpg')"></canvas>
-			<div class="cta-inner">
-				<div class="cta-title">
-					<h2>Buying</h2>
-					<h2>A Home</h2>
+	<div class="cta-holder">
+		<div class="cta-list">
+			<a href="#" aria-label="cta">
+				<div class="cta-img"><canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-1.jpg')"></canvas></div>
+				<div class="cta-inner">
+					<div class="cta-title">
+						<h2>Buying a</h2>
+						<h3>Home</h3>
+						<div class="cta-btn">Know More +</div>
+					</div>
 				</div>
-				<div class="cta-btn">Know More +</div>
-			</div>
-		</a>
-	</div>
-	<div class="git-list">
-		<a href="#" aria-label="cta">
-			<canvas width="617" height="382" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-2.jpg')"></canvas>
-			<div class="cta-inner">
-				<div class="cta-title">
-					<h2>Help Me</h2>
-					<h2>Relocate</h2>
+			</a>
+		</div>
+		<div class="cta-list">
+			<a href="#" aria-label="cta">
+				<div class="cta-img"><canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-2.jpg')"></canvas></div>
+				<div class="cta-inner">
+					<div class="cta-title">
+						<h2>Help Me</h2>
+						<h3>Relocate</h3>
+						<div class="cta-btn">Know More +</div>
+					</div>
 				</div>
-				<div class="cta-btn">Know More +</div>
-			</div>
-		</a>
-	</div>
-	<div class="git-list">
-		<a href="#" aria-label="cta">
-			<canvas width="617" height="382" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-3.jpg')"></canvas>
-			<div class="cta-inner">
-				<div class="cta-title">
-					<h2>Selling a</h2>
-					<h2>Home</h2>
+			</a>
+		</div>
+		<div class="cta-list">
+			<a href="#" aria-label="cta">
+				<div class="cta-img"><canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-3.jpg')"></canvas></div>
+				<div class="cta-inner">
+					<div class="cta-title">
+						<h2>Selling a</h2>
+						<h3>Home</h3>
+						<div class="cta-btn">Know More +</div>
+					</div>
+					
 				</div>
-				<div class="cta-btn">Know More +</div>
-			</div>
-		</a>
+			</a>
+		</div>
 	</div>
 </section>
 <!-- End Cta -->
