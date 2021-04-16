@@ -163,28 +163,30 @@
 				<h3>With US</h3>
 			</div>
 			<div class="git-form">
-			<div class="form-md">
-				<label for="git-fname">Name</label>
-				<input type="text" id="git-fname" placeholder="Name">
-			</div>
-			<div class="form-md">
-				<label for="git-email">Email</label>
-				<input type="text" id="git-email" placeholder="Email">
-			</div>
-			<div class="form-md">
-				<label for="git-phone">phone</label>
-				<input type="text" id="git-phone" placeholder="phone">
-			</div>
-			<div class="form-md">
-				<label for="git-message">message</label>
-				<textarea  id="git-message" placeholder="Message"></textarea>
-			</div>
-			<div class="form-btn">
-				<div class="global-site-btn">
-					<a href="#" aria-label="sign up" class="global-site-btn">Sign Up +</a>
+				<div class="row">
+					<div class="form-md col-md-4">
+						<label for="git-fname">Name</label>
+						<input type="text" id="git-fname" placeholder="Name">
+					</div>
+					<div class="form-md col-md-4">
+						<label for="git-email">Email</label>
+						<input type="text" id="git-email" placeholder="Email">
+					</div>
+					<div class="form-md col-md-4">
+						<label for="git-phone">phone</label>
+						<input type="text" id="git-phone" placeholder="phone">
+					</div>
+					<div class="form-md col-md-12">
+						<label for="git-message">message</label>
+						<textarea  id="git-message" placeholder="Message"></textarea>
+					</div>
+					<div class="form-btn">
+						<div class="global-site-btn">
+							<a href="#" aria-label="sign up" class="global-site-btn">Sign Up +</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+			</div>	
 		</div>
 	</div>
 </section>
@@ -195,7 +197,7 @@
 	<div class="cta-holder">
 		<div class="cta-list">
 			<a href="#" aria-label="cta">
-				<div class="cta-img"><canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-1.jpg')"></canvas></div>
+				<div class="cta-img"><canvas width="423" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-1.jpg')"></canvas></div>
 				<div class="cta-inner">
 					<div class="cta-title">
 						<h2>Buying a</h2>
@@ -207,7 +209,7 @@
 		</div>
 		<div class="cta-list">
 			<a href="#" aria-label="cta">
-				<div class="cta-img"><canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-2.jpg')"></canvas></div>
+				<div class="cta-img"><canvas width="423" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-2.jpg')"></canvas></div>
 				<div class="cta-inner">
 					<div class="cta-title">
 						<h2>Help Me</h2>
@@ -219,7 +221,7 @@
 		</div>
 		<div class="cta-list">
 			<a href="#" aria-label="cta">
-				<div class="cta-img"><canvas width="392" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-3.jpg')"></canvas></div>
+				<div class="cta-img"><canvas width="423" height="302" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/git-img-3.jpg')"></canvas></div>
 				<div class="cta-inner">
 					<div class="cta-title">
 						<h2>Selling a</h2>
@@ -239,7 +241,7 @@
 <section class="hp-footer">
 	<div class="footer-left">
 		<div class="footer-logo">
-			<img alt="logo" class="img-responsive pad-right" src="[stylesheet_directory]/images/footer-logo-.png">
+			<img alt="logo" class="img-responsive pad-right" src="images/footer-logo.png">
 			<div class="footer-text">
 				
 			</div>

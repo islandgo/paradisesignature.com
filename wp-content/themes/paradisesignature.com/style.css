@@ -583,8 +583,7 @@ a.aios-initial-setup-dead-link {}
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 25px;
-    max-width: 1225px;
-    margin: 0 auto;
+    padding: 0 20px;
     padding-bottom: 150px;
     padding-top: 98px;
 }
@@ -720,3 +719,11 @@ a.aios-initial-setup-dead-link {}
     width: 202px;
     padding: 29px 0 18px 18px;
 } */
+
+/* footer form start */
+
+.hp-footer {
+    background-color: gray;
+}
+
+/* footer form end */
