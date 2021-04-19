@@ -31,6 +31,68 @@
 </section>
 <!-- Welcome end -->
 
+<!-- QS start -->
+<section class="hp-qs">
+	<div class="hp-qs-holder">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="global-site-title">
+						<div class="site-title-number">
+							<span>02</span>
+							<span class="title-border"></span>
+						</div>
+						<h2>Quick</h2>
+						<h3>Search</h3>
+					</div>
+				</div>
+				<div class="col-md-8 form">
+					<div class="qs-form">
+						<div class="qs-lg">
+							<div class="qs-list">
+								<select aria-label="qs-fields">
+									<option value="All Cities">All Cities</option>
+									<option value="All Cities">All Cities</option>
+									<option value="All Cities">All Cities</option>
+								</select>
+							</div>
+							<div class="qs-md">
+								<select aria-label="qs-fields">
+									<option value="Beds">Beds</option>
+									<option value="Beds">Beds</option>
+									<option value="Beds">Beds</option>
+								</select>
+							</div>
+							<div class="qs-md">
+								<select aria-label="qs-fields">
+									<option value="Baths">Baths</option>
+									<option value="Baths">Baths</option>
+									<option value="Baths">Baths</option>
+								</select>
+							</div>
+						</div>
+						<div class="qs-range">
+							<div class="p-md">
+								<div class="slidecontainer">
+									<p>Value: <span id="demo"></span></p>
+									<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+								</div>
+							</div>
+							<div class="p-btn">
+								<a href="#" aria-label="Search" class="global-site-btn">Search +</a>
+							</div> 
+							<div class="p-btn">
+								<a href="#" aria-label="Advanced" class="global-site-btn">Advanced +</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- QS end -->
+
 <!-- featured start -->
 <section class="hp-properties">
 	<div class="global-site-title">
@@ -152,43 +214,43 @@
 
 <!-- Hp git -->
 <section class="hp-git">
-	<div class="container">
-		<div class="git-holder">
-			<div class="global-site-title">
-				<div class="site-title-number">
-					<span>05</span>
-					<span class="title-border"></span>
-				</div>
-				<h2>Get In Touch</h2>
-				<h3>With US</h3>
-			</div>
-			<div class="git-form">
-				<div class="row">
-					<div class="form-md col-md-4">
-						<label for="git-fname">Name</label>
-						<input type="text" id="git-fname" placeholder="Name">
+	<div class="textwidget custom-html-widget">
+		<div class="container">
+			<div class="form-holder">
+				<div class="global-site-title">
+					<div class="site-title-number">
+						<span>06</span>
+						<span class="title-border"></span>
 					</div>
-					<div class="form-md col-md-4">
+					<h2>Get In Touch</h2>
+					<h3>With US</h3>
+				</div>
+				<div class="git-form">
+					<div class="form-md">
+						<label for="git-fname">Name</label>
+						<input type="text" id="name" placeholder="Name">
+					</div>
+	
+					<div class="form-md">
 						<label for="git-email">Email</label>
 						<input type="text" id="git-email" placeholder="Email">
 					</div>
-					<div class="form-md col-md-4">
+	
+					<div class="form-md">
 						<label for="git-phone">phone</label>
 						<input type="text" id="git-phone" placeholder="phone">
 					</div>
-					<div class="form-md col-md-12">
-						<label for="git-message">message</label>
-						<textarea  id="git-message" placeholder="Message"></textarea>
-					</div>
-					<div class="form-btn">
-						<div class="global-site-btn">
-							<a href="#" aria-label="sign up" class="global-site-btn">Sign Up +</a>
-						</div>
+					<div class="form-md form-msg">
+						<label for="git-message">Message</label>
+						<input type="text" id="git-message" placeholder="Message">
 					</div>
 				</div>
-			</div>	
+				<div class="global-btn">
+					<a href="#" aria-label="sign up" class="global-site-btn">sign up +</a>
+				</div>
+			</div>
 		</div>
-	</div>
+	</div>	
 </section>
 <!-- End Git -->
 
