@@ -1,8 +1,28 @@
 <?php get_header(); ?>
 
-	<!-- your home html -->
+<!-- your home html -->
 
-
+<!-- Slideshow -->
+<section class="hp-slideshow">
+	<h2 class="hidden">hidden h2</h2>
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Hp Slideshow") ) : ?><?php endif ?>
+	<div class="slide-logo">
+		<a href="blogurl" aria-label="logo">
+			<img alt="logo" class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide-logo.png">
+		</a>
+	</div>
+	<div class="slide-arrow">
+		<img alt="arrow" class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide-arrow.png">
+	</div>
+	<div class="slide-burger">
+		<div class="burger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</section>
+<!-- End Slideshow -->
 <!-- Welcome -->
 <section class="hp-welcome">
 	<div class="container welcome-grid">
