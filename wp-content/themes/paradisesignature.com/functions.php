@@ -12,6 +12,26 @@ function register_ai_child_starter_theme_sidebars() {
 	   'before_title' => '',
 	   'after_title' => ''
     ));
+
+	register_sidebar(array( 
+		'name' => 'Header Info',
+		'id'=>'header-info',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+	 
+	register_sidebar(array( 
+		'name' => 'Hp Slideshow',
+		'id'=>'hp-slideshow',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => ''
+	 ));
+
+
 	
 }
 
@@ -27,6 +47,7 @@ function ai_starter_theme_enqueue_child_assets() {
 
 	/* Enqueue my scripts */
 	wp_enqueue_script('aios-starter-theme-child-script', get_stylesheet_directory_uri(). '/js/scripts.js');
+	wp_enqueue_script('qs-range', get_stylesheet_directory_uri(). '/js/ion.rangeSlider.min.js');
 	
 }
 

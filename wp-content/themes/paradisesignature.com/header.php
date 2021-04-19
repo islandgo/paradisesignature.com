@@ -20,16 +20,27 @@
 
 
 	<header class="header">
-		<div class="container">
-			<div class="logo">
-				<a href="<?php echo esc_url( home_url() ) ?>" class="site-name"><?php bloginfo('name'); ?></a>
-			</div>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header Info") ) : ?><?php endif ?>
 
 			<nav class="navigation">
 				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav', 'theme_location' => 'primary-menu' ) ); ?>
 			</nav>
-		</div>
 	</header>
+
+	<div class="bm-menu bm-view">
+        <div class="bm-content" data-simplebar="init">
+            <div class="bm-inner">
+            	<div class="bm-close">
+					<span class="ai-font-close-a"></span>
+				</div>
+                <div class="bm-title"> Navigate </div>
+                <div class="burger-navs">
+                    <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav2', 'theme_location' => 'primary-menu' ) ); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bm-drop bm-view"></div>
 
 	<main>
 		<h2 class="aios-starter-theme-hide-title">Main Content</h2>

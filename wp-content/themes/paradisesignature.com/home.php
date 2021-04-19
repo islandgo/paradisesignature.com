@@ -1,8 +1,28 @@
 <?php get_header(); ?>
 
-	<!-- your home html -->
+<!-- your home html -->
 
-
+<!-- Slideshow -->
+<section class="hp-slideshow">
+	<h2 class="hidden">hidden h2</h2>
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Hp Slideshow") ) : ?><?php endif ?>
+	<div class="slide-logo">
+		<a href="blogurl" aria-label="logo">
+			<img alt="logo" class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide-logo.png">
+		</a>
+	</div>
+	<div class="slide-arrow">
+		<img alt="arrow" class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide-arrow.png">
+	</div>
+	<div class="slide-burger">
+		<div class="burger-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</section>
+<!-- End Slideshow -->
 <!-- Welcome -->
 <section class="hp-welcome">
 	<div class="container welcome-grid">
@@ -30,6 +50,66 @@
 	</div>
 </section>
 <!-- Welcome end -->
+
+<!-- Hp Qs -->
+<section class="hp-qs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="global-site-title">
+					<div class="site-title-number">
+						<span>01</span>
+						<span class="title-border"></span>
+					</div>
+					<h2>Paradise Properties of</h2>
+					<h3>NSB / SIGNATURE GROUP</h3>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="qs-form">
+					<div class="qs-lg">
+						<select aria-label="qs-fields">
+							<option value="All Cities">All Cities</option>
+							<option value="All Cities">All Cities</option>
+							<option value="All Cities">All Cities</option>
+						</select>
+					</div>
+					<div class="qs-lg">
+						<div class="qs-md">
+							<select aria-label="qs-fields">
+								<option value="Beds">Beds</option>
+								<option value="Beds">Beds</option>
+								<option value="Beds">Beds</option>
+							</select>
+						</div>
+						<div class="qs-md">
+							<select aria-label="qs-fields">
+								<option value="Baths">Baths</option>
+								<option value="Baths">Baths</option>
+								<option value="Baths">Baths</option>
+							</select>
+						</div>
+					</div>
+					<div class="qs-range">
+						<div class="p-md">
+							<span>Price</span>
+							<div class="property-range">
+								<div class="property-range-line">
+									<input type="text" id="price_range" value="" class="" tabindex="-1" readonly="">
+									<span class="selected-price selected-min-price">$0M</span>
+									<span class="selected-price selected-max-price">$300M</span>
+																					<input id="lp" name="lp" type="hidden" value="">
+																					<input id="hp" name="hp" type="hidden" value="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Qs -->
 
 <!-- featured start -->
 <section class="hp-properties">
