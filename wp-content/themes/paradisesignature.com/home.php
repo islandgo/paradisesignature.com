@@ -126,63 +126,103 @@
 		<h2>FEATURED</h2>
 		<h3>LISTINGS</h3>
 	</div>
-	<div class="fp-inner">
-		<div class="fp-slick-holder">
-			<div>
-				<div class="fp-list">
-					<a href="#" aria-label="properties">
-						<div class="fp-img">
-							<canvas width="927" height="617" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-1.jpg')"></canvas>
-						</div>
-					</a>
-					<div class="fp-bottom">
-						<div class="fpb-left">
-							<h2>1234 PINE DRIVE AVE</h2>
-							<h3>LOS ANGELES, CALIFORNIA</h3>
-						</div>
-						<div class="fpb-right">
-							<a href="#" aria-label="read more">Read More +</a>
+	<div class="property-slick js-property-slick">
+		<!-- Slick Item -->
+		<div class="property-item-wrap">
+			<a href="#" class="property-item">
+				<div class="property-image">
+					<canvas width="821" height="541" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-2.jpg')"></canvas>
+				</div>
+				<div class="property-details">
+					<div>
+						<div class="property-address">720 East Walnut Avenue</div>
+						<div class="property-address">El Segundo, Ca 90245</div>
+					</div>
+					<div>
+						<div class="property-price">$490,990</div>
+						<div class="property-misc">
+							<span class="property-beds">3 beds</span>
+							<span class="property-baths">4.5 baths</span>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div>
-				<div class="fp-list">
-					<a href="#" aria-label="properties">
-						<div class="fp-img">
-							<canvas width="927" height="617" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-2.jpg')"></canvas>
-						</div>
-					</a>
-					<div class="fp-bottom">
-						<div class="fpb-left">
-							<h2>1234 PINE DRIVE AVE</h2>
-							<h3>LOS ANGELES, CALIFORNIA</h3>
-						</div>
-						<div class="fpb-right">
-							<a href="#" aria-label="read more">Read More +</a>
-						</div>
+				<div class="property-hover">
+					<div class="property-price">$490,990</div>
+					<div class="property-address">720 East Walnut Avenue</div>
+					<div class="property-address">El Segundo, Ca 90245</div>
+					<div class="property-misc">
+						<span class="property-beds">3 beds</span>
+						<span class="property-baths">4.5 baths</span>
 					</div>
+					<div class="btn view-det default-btn">View Details</div>
 				</div>
-			</div>
-			<div>
-				<div class="fp-list">
-					<a href="#" aria-label="properties">
-						<div class="fp-img">
-							<canvas width="927" height="617" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-3.jpg')"></canvas>
-						</div>
-					</a>
-					<div class="fp-bottom">
-						<div class="fpb-left">
-							<h2>1234 PINE DRIVE AVE</h2>
-							<h3>LOS ANGELES, CALIFORNIA</h3>
-						</div>
-						<div class="fpb-right">
-							<a href="#" aria-label="read more">Read More +</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			</a>
 		</div>
+		<!-- End Slick Item -->
+		<!-- Slick Item -->
+		<div class="property-item-wrap">
+			<a href="#" class="property-item">
+				<div class="property-image">
+					<canvas width="821" height="541" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-2.jpg')"></canvas>
+				</div>
+				<div class="property-details">
+					<div>
+						<div class="property-address">720 East Walnut Avenue</div>
+						<div class="property-address">El Segundo, Ca 90245</div>
+					</div>
+					<div>
+						<div class="property-price">$490,990</div>
+						<div class="property-misc">
+							<span class="property-beds">3 beds</span>
+							<span class="property-baths">4.5 baths</span>
+						</div>
+					</div>
+				</div>
+				<div class="property-hover">
+					<div class="property-price">$490,990</div>
+					<div class="property-address">720 East Walnut Avenue</div>
+					<div class="property-address">El Segundo, Ca 90245</div>
+					<div class="property-misc">
+						<span class="property-beds">3 beds</span>
+						<span class="property-baths">4.5 baths</span>
+					</div>
+					<div class="btn view-det default-btn">View Details</div>
+				</div>
+			</a>
+		</div>
+		<!-- End Slick Item -->
+		<!-- Slick Item -->
+		<div class="property-item-wrap">
+			<a href="#" class="property-item">
+				<div class="property-image">
+					<canvas width="821" height="541" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-3.jpg')"></canvas>
+				</div>
+				<div class="property-details">
+					<div>
+						<div class="property-address">720 East Walnut Avenue</div>
+						<div class="property-address">El Segundo, Ca 90245</div>
+					</div>
+					<div>
+						<div class="property-price">$490,990</div>
+						<div class="property-misc">
+							<span class="property-beds">3 beds</span>
+							<span class="property-baths">4.5 baths</span>
+						</div>
+					</div>
+				</div>
+				<div class="property-hover">
+					<div class="property-price">$490,990</div>
+					<div class="property-address">720 East Walnut Avenue</div>
+					<div class="property-address">El Segundo, Ca 90245</div>
+					<div class="property-misc">
+						<span class="property-beds">3 beds</span>
+						<span class="property-baths">4.5 baths</span>
+					</div>
+					<div class="btn view-det default-btn">View Details</div>
+				</div>
+			</a>
+		</div>
+		<!-- End Slick Item -->
 	</div>
 	<a href="#" class="global-site-btn" aria-label="View Listings">View All Listings +</a>
 </section>

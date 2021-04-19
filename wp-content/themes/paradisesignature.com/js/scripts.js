@@ -61,6 +61,33 @@
 		},
 		initFeaturedProperties: function() {
 			/* Put featured properties code here */
+			jQuery('.js-property-slick').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				prevArrow: '<button class="property-prev" aria-label="prev" type="button">Prev</button>', 
+				nextArrow: '<button class="property-next" aria-label="next" type="button">Next</button>',
+				dots: false,
+				autoplay: false,
+				autoplaySpeed: 6000,
+				responsive: [
+					{
+						breakpoint: 992,
+						settings: {
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+						}
+					},
+					{
+						breakpoint: 481,
+						settings: {
+						}
+					}
+				]
+			});
 		},
 		initFeaturedCommunities: function() {
 			/* Put featured communities code here */
