@@ -52,7 +52,7 @@
 <!-- Welcome end -->
 
 <!-- QS start -->
-<section class="hp-qs">
+<section class="hp-qs site-qs">
 	<div class="hp-qs-holder">
 		<div class="container">
 			<div class="row">
@@ -92,11 +92,14 @@
 							</div>
 						</div>
 						<div class="qs-range">
-							<div class="p-md">
-								<div class="slidecontainer">
-									<p>Value: <span id="demo"></span></p>
-									<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+							<div class="qs-range-field">
+								<input type="hidden" id="min_price" name="min_price" value="">
+								<input type="hidden" id="max_price" name="max_price" value="">
+								<div class="qs-range-price-wrap">
+									<span class="selected-price selected-min-price">$100k</span>
+									<span class="selected-price selected-max-price">$100m</span>
 								</div>
+								<input type="text" name="qs-range" id="qs-range" aria-label="qs-range">
 							</div>
 							<div class="p-btn">
 								<a href="#" aria-label="Search" class="global-site-btn">Search +</a>

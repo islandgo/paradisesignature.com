@@ -41,13 +41,15 @@ add_action( 'widgets_init', 'register_ai_child_starter_theme_sidebars', 11 );
  * Enqueue theme styles and scripts
  */
 function ai_starter_theme_enqueue_child_assets() {
-	wp_enqueue_style('fonts julius','https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
-	wp_enqueue_style('fonts sourcesanspro','https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
-
 	/* Enqueue my scripts */
+	wp_enqueue_script('js-ion-rangeSlider', get_stylesheet_directory_uri(). '/js/ion.rangeSlider.min.js');
 	wp_enqueue_script('aios-starter-theme-child-script', get_stylesheet_directory_uri(). '/js/scripts.js');
-	wp_enqueue_script('qs-range', get_stylesheet_directory_uri(). '/js/ion.rangeSlider.min.js');
+
+	wp_enqueue_style('fonts julius','https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+	wp_enqueue_style('fonts sourcesanspro','https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+	wp_enqueue_style('css-ion-rangeSlider', get_stylesheet_directory_uri(). '/css/ion.rangeSlider.min.css');
+
+
 	
 }
 

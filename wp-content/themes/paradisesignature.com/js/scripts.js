@@ -1,37 +1,6 @@
 ( function() {
 
 	var app = {
-
-		initRangePicker: function(){
-			var $rangeslider = jQuery('.property-range-line #price_range'),
-			$minPrice = jQuery('.property-range-line .selected-min-price'),
-			$maxPrice = jQuery('.property-range-line .selected-max-price');
-		jQuery('.property-range-line #price_range').ionRangeSlider({
-			type: 'double',
-			min: 0,
-			max: 100,
-			hide_min_max: true,
-			hide_from_to: true,
-			onFinish: function () {
-			}
-		});
-		$rangeslider.on("change", function () {
-			var $this = jQuery(this),
-				value = $this.prop("value").split(";");
-			_minPrice = (value[0] < 1 ? value[0] : value[0] + 'M');
-			_maxPrice = (value[1] < 1 ? value[1] : value[1] + 'M');
-			$minPrice.text('$' + _minPrice);
-			$maxPrice.text('$' + _maxPrice);
-			_maxPrice = (parseInt(_maxPrice) * 1000000);
-			_minPrice = (parseInt(_minPrice) * 1000000);
-			jQuery('.property-range-line .min-price-class').val(_minPrice);
-			jQuery('.property-range-line .max-price-class').val(_maxPrice);
-			jQuery('#min_price').val(_minPrice);
-			jQuery('#max_price').val(_maxPrice);
-		});
-		console.log('working');
-		},
-
 		siteOffcanvas: function() {
             jQuery('#nav2 li.menu-item-has-children > a').on('click', function(e) {
                 var $this = $(this);
@@ -101,6 +70,62 @@
 		},
 		initQuickSearch: function() {
 			/* Put quick search code here */
+
+			var $rangeslider = jQuery('.qs-range-field #qs-range'),
+			$minPrice = jQuery('.qs-range-field .selected-min-price'),
+			$maxPrice = jQuery('.qs-range-field .selected-max-price');
+
+			jQuery('.qs-range-field #qs-range').ionRangeSlider({
+				type: 'double',
+				min: 1,
+				max: 10,
+				from: 1,
+				to: 10,
+				hide_min_max: true,
+				hide_from_to: true,
+				onFinish: function () {
+				}
+			});
+
+			$rangeslider.on("change", function () {
+				var $this = jQuery(this),
+					value = $this.prop("value").split(";");
+
+
+
+				_minPrice = (value[0] < 1 ? value[0] : value[0] + 'M');
+				_maxPrice = (value[1] < 1 ? value[1] : value[1] + 'M');
+				// console.log(_minPrice);
+				// console.log(_maxPrice);
+				$minPrice.text('$' + _minPrice);
+				$maxPrice.text('$' + _maxPrice);
+
+				_maxPrice = (parseInt(_maxPrice) * 1000000);
+				_minPrice = (parseInt(_minPrice) * 1000000);
+
+				$minPrice.val(convertPrice(_minPrice));
+				$maxPrice.val(convertPrice(_maxPrice));
+
+
+
+				jQuery('#min_price').val(_minPrice);
+				jQuery('#max_price').val(_maxPrice);
+
+			});
+
+			function convertPrice (price) {
+				// Nine Zeroes for Billions
+				return Math.abs(Number(price)) >= 1.0e+9
+				? Math.abs(Number(price)) / 1.0e+9 + "B"
+				// Six Zeroes for Millions
+				: Math.abs(Number(price)) >= 1.0e+6
+				? Math.abs(Number(price)) / 1.0e+6 + "M"
+				// Three Zeroes for Thousands
+				: Math.abs(Number(price)) >= 1.0e+3
+				? Math.abs(Number(price)) / 1.0e+3 + "K"
+				: Math.abs(Number(price));
+			}
+
 		},
 		initCustomFunction: function() {
 			/* See the pattern? Create more functions like this if needed. */
@@ -108,18 +133,8 @@
 		
 	}
 
-	var slider = document.getElementById("myRange");
-	var output = document.getElementById("demo");
-	output.innerHTML = slider.value;
-
-		slider.oninput = function() {
-		output.innerHTML = this.value;
-		}
-
 	
 	jQuery(document).ready( function() {
-
-		app.initRangePicker();
 
 		app.siteOffcanvas();
 		
