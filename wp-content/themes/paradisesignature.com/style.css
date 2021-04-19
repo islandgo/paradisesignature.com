@@ -121,6 +121,165 @@ div#main-wrapper {
 
 /* Global */
 
+/**** Paulo *******/
+
+.hp-footer {
+    padding: 100px 56px;
+    position: relative;
+    background:rgb(37, 37, 37);
+    font-size: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hp-footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(images/bg-footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.12;
+    pointer-events: none;
+    
+}
+
+.hp-footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.footer-left {
+    position: relative;
+    width: 700px;
+    height: 597px;
+    background: #fff;
+    padding: 101px 0 90px;
+}
+
+.ft-title {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    margin-top: 110px;
+}
+
+.contact-us-form {
+    justify-content: space-between;
+    padding: 25px 0 50px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 18px;
+    grid-row-gap: 72px;
+}
+
+.ff-form {
+    max-width: 840px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 75px 69px 0;
+    position: relative;
+    font-size: 0;
+}
+
+.form-md input, .form-md textarea {
+    width: 100%;
+    background: transparent;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgb(66, 66, 66);
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    resize: none;
+    overflow: hidden;
+}
+
+.contact-us-form .form-msg {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.ff-btn {
+    text-align: center;
+    margin-top: 62px;
+}
+.ff-btn input {
+    width: 28px;
+    height: 25px;
+    background: url(images/send-icon.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.ff-btn span {
+    font-size: 13px;
+    color: #FFF;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.footer-logo {
+    width: 511px;
+    margin: 0 auto;
+    height: 176px;
+}
+
+.footer-info {
+    font-size: 15px;
+    text-align: center;
+    padding: 88px 0 93px;
+}
+
+.footer-info {
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 2em;
+    right: 0;
+}
+
+.footer-smi {
+    margin-top: 29px;
+    color: #c34130;
+}
+
+.footer-smi a {
+    font-size: 28px;
+    margin: 35px;
+}
+
+.footer-phone span {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #c32209;
+}
+
+.footer-email span {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #c32209;
+}
+
 body{
 	font-family: var(--font-family-default);
 	font-size: var(--font-size-default);
@@ -1587,8 +1746,5 @@ a.aios-initial-setup-dead-link {}
 
 /* footer form start */
 
-.hp-footer {
-    background-color: gray;
-}
 
 /* footer form end */

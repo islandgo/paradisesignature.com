@@ -366,7 +366,7 @@
 <section class="hp-footer">
 	<div class="footer-left">
 		<div class="footer-logo">
-			<img alt="logo" class="img-responsive pad-right" src="images/footer-logo.png">
+			<img alt="logo" class="img-responsive pad-right" src="<?php echo get_stylesheet_directory_uri() ?>/images/left-footer-logo.png">
 			<div class="footer-text">
 				
 			</div>
@@ -388,7 +388,6 @@
 				<a href="[ai_client_instagram]" aria-label="instagram" target="_blank">
 					<span class="ai-font-instagram"></span>
 				</a>
-				</a>
 			</div>
 		</div>
 	</div>
@@ -396,20 +395,23 @@
 		<div class="footer-form">
 			<div class="ft-title">Contact US</div>
 			<div class="ff-form">
-				<div class="form-md">
-					<label for="ff-fname">Name</label>
-					<input type="text" id="ff-fname" placeholder="Name">
-				</div>
-				<div class="form-md">
-					<label for="ff-phone">Phone</label>
-					<input type="text" id="ff-phone" placeholder="phone">
-				</div>
-				<div class="form-md">
-					<label for="ff-message">message</label>
-					<textarea  id="ff-message" placeholder="Message"></textarea>
+				<div class="contact-us-form">
+					<div class="form-md">
+						<label for="ff-fname">Name</label>
+						<input type="text" id="ff-fname" placeholder="Name">
+					</div>
+					<div class="form-md">
+						<label for="ff-phone">Phone</label>
+						<input type="text" id="ff-phone" placeholder="phone">
+					</div>
+					<div class="form-md form-msg">
+						<label for="ff-message">message</label>
+						<textarea  id="ff-message" placeholder="Message"></textarea>
+					</div>
 				</div>
 				<div class="ff-btn">
 					<input type="submit" value="Send">
+					<span>SEND</span>
 				</div>
 			</div>
 		</div>
