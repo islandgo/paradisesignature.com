@@ -132,29 +132,23 @@
 			<a href="#" class="property-item">
 				<div class="property-image">
 					<canvas width="821" height="541" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-2.jpg')"></canvas>
-				</div>
-				<div class="property-details">
-					<div>
-						<div class="property-address">720 East Walnut Avenue</div>
-						<div class="property-address">El Segundo, Ca 90245</div>
-					</div>
-					<div>
-						<div class="property-price">$490,990</div>
+					<div class="property-hover">
+						<div class="property-price">$ 7,800,000</div>
 						<div class="property-misc">
-							<span class="property-beds">3 beds</span>
-							<span class="property-baths">4.5 baths</span>
+							<span class="property-beds">beds: 3</span>
+							<span class="property-baths">baths: 3</span>
+							<span class="property-baths">SQ FT: 2,000</span>
 						</div>
 					</div>
 				</div>
-				<div class="property-hover">
-					<div class="property-price">$490,990</div>
-					<div class="property-address">720 East Walnut Avenue</div>
-					<div class="property-address">El Segundo, Ca 90245</div>
-					<div class="property-misc">
-						<span class="property-beds">3 beds</span>
-						<span class="property-baths">4.5 baths</span>
+				<div class="property-details">
+					<div>
+						<div class="property-address">1234 Pine Drive Ave</div>
+						<div class="property-address">Los Angeles, California</div>
 					</div>
-					<div class="btn view-det default-btn">View Details</div>
+					<div class="fp-btn">
+						Read More +
+					</div>
 				</div>
 			</a>
 		</div>
@@ -164,29 +158,23 @@
 			<a href="#" class="property-item">
 				<div class="property-image">
 					<canvas width="821" height="541" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-2.jpg')"></canvas>
-				</div>
-				<div class="property-details">
-					<div>
-						<div class="property-address">720 East Walnut Avenue</div>
-						<div class="property-address">El Segundo, Ca 90245</div>
-					</div>
-					<div>
-						<div class="property-price">$490,990</div>
+					<div class="property-hover">
+						<div class="property-price">$ 7,800,000</div>
 						<div class="property-misc">
-							<span class="property-beds">3 beds</span>
-							<span class="property-baths">4.5 baths</span>
+							<span class="property-beds">beds: 3</span>
+							<span class="property-baths">baths: 3</span>
+							<span class="property-baths">SQ FT: 2,000</span>
 						</div>
 					</div>
 				</div>
-				<div class="property-hover">
-					<div class="property-price">$490,990</div>
-					<div class="property-address">720 East Walnut Avenue</div>
-					<div class="property-address">El Segundo, Ca 90245</div>
-					<div class="property-misc">
-						<span class="property-beds">3 beds</span>
-						<span class="property-baths">4.5 baths</span>
+				<div class="property-details">
+					<div>
+						<div class="property-address">1234 Pine Drive Ave</div>
+						<div class="property-address">Los Angeles, California</div>
 					</div>
-					<div class="btn view-det default-btn">View Details</div>
+					<div class="fp-btn">
+						Read More +
+					</div>
 				</div>
 			</a>
 		</div>
@@ -196,35 +184,29 @@
 			<a href="#" class="property-item">
 				<div class="property-image">
 					<canvas width="821" height="541" style="background-image:url('<?php echo get_stylesheet_directory_uri() ?>/images/fp-3.jpg')"></canvas>
-				</div>
-				<div class="property-details">
-					<div>
-						<div class="property-address">720 East Walnut Avenue</div>
-						<div class="property-address">El Segundo, Ca 90245</div>
-					</div>
-					<div>
-						<div class="property-price">$490,990</div>
+					<div class="property-hover">
+						<div class="property-price">$ 7,800,000</div>
 						<div class="property-misc">
-							<span class="property-beds">3 beds</span>
-							<span class="property-baths">4.5 baths</span>
+							<span class="property-beds">beds: 3</span>
+							<span class="property-baths">baths: 3</span>
+							<span class="property-baths">SQ FT: 2,000</span>
 						</div>
 					</div>
 				</div>
-				<div class="property-hover">
-					<div class="property-price">$490,990</div>
-					<div class="property-address">720 East Walnut Avenue</div>
-					<div class="property-address">El Segundo, Ca 90245</div>
-					<div class="property-misc">
-						<span class="property-beds">3 beds</span>
-						<span class="property-baths">4.5 baths</span>
+				<div class="property-details">
+					<div>
+						<div class="property-address">1234 Pine Drive Ave</div>
+						<div class="property-address">Los Angeles, California</div>
 					</div>
-					<div class="btn view-det default-btn">View Details</div>
+					<div class="fp-btn">
+						Read More +
+					</div>
 				</div>
 			</a>
 		</div>
 		<!-- End Slick Item -->
 	</div>
-	<a href="#" class="global-site-btn" aria-label="View Listings">View All Listings +</a>
+	<a href="#" aria-label="view listing" class="global-site-btn">View All Listing +</a>
 </section>
 <!-- featured end -->
 
@@ -309,7 +291,7 @@
 					</div>
 				</div>
 				<div class="global-btn">
-					<a href="#" aria-label="sign up" class="global-site-btn">sign up +</a>
+					<input type="submit" class="global-site-btn" value="Sign UP +">
 				</div>
 			</div>
 		</div>
@@ -364,54 +346,56 @@
 
 <!-- footer -->
 <section class="hp-footer">
-	<div class="footer-left">
-		<div class="footer-logo">
-			<img alt="logo" class="img-responsive pad-right" src="<?php echo get_stylesheet_directory_uri() ?>/images/left-footer-logo.png">
-			<div class="footer-text">
-				
-			</div>
-		</div>
-		<div class="footer-info">
-			<div class="footer-phone">
-				<span class="ai-font-phone"></span>
-				386.847.1609
-			</div>
-			<div class="footer-email">
-				<span class="ai-font-envelope-f"></span>
-				paulobrienproperties@gmail.com
-			</div>
-	
-			<div class="footer-smi">
-				<a href="[ai_client_facebook]" aria-label="facebook" target="_blank">
-					<span class="ai-font-facebook"></span>
-				</a>
-				<a href="[ai_client_instagram]" aria-label="instagram" target="_blank">
-					<span class="ai-font-instagram"></span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="footer-right">
-		<div class="footer-form">
-			<div class="ft-title">Contact US</div>
-			<div class="ff-form">
-				<div class="contact-us-form">
-					<div class="form-md">
-						<label for="ff-fname">Name</label>
-						<input type="text" id="ff-fname" placeholder="Name">
-					</div>
-					<div class="form-md">
-						<label for="ff-phone">Phone</label>
-						<input type="text" id="ff-phone" placeholder="phone">
-					</div>
-					<div class="form-md form-msg">
-						<label for="ff-message">message</label>
-						<textarea  id="ff-message" placeholder="Message"></textarea>
+	<div class="container-fluid">
+		<div class="footer-holder">
+			<div class="footer-left">
+				<div class="footer-logo">
+					<img alt="logo" class="img-responsive pad-right" src="<?php echo get_stylesheet_directory_uri() ?>/images/left-footer-logo.png">
+					<div class="footer-text">
+						
 					</div>
 				</div>
-				<div class="ff-btn">
-					<input type="submit" value="Send">
-					<span>SEND</span>
+				<div class="footer-info">
+					<div class="footer-phone">
+						<span class="ai-font-phone"></span>
+						386.847.1609
+					</div>
+					<div class="footer-email">
+						<span class="ai-font-envelope-f"></span>
+						paulobrienproperties@gmail.com
+					</div>
+			
+					<div class="footer-smi">
+						<a href="[ai_client_facebook]" aria-label="facebook" target="_blank">
+							<span class="ai-font-facebook"></span>
+						</a>
+						<a href="[ai_client_instagram]" aria-label="instagram" target="_blank">
+							<span class="ai-font-instagram"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-form">
+				<div class="ft-title">Contact US</div>
+				<div class="ff-form">
+					<div class="contact-us-form">
+						<div class="form-md">
+							<label for="ff-fname">Name</label>
+							<input type="text" id="ff-fname" placeholder="Name">
+						</div>
+						<div class="form-md">
+							<label for="ff-phone">Phone</label>
+							<input type="text" id="ff-phone" placeholder="phone">
+						</div>
+						<div class="form-md form-msg">
+							<label for="ff-message">message</label>
+							<textarea  id="ff-message" placeholder="Message"></textarea>
+						</div>
+					</div>
+					<div class="ff-btn">
+						<input type="submit" value="Send">
+						<span>SEND</span>
+					</div>
 				</div>
 			</div>
 		</div>
